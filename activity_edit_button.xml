@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button Name"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="e.g. Play Button"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:background="@drawable/edit_text_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Target X (pixels from left)"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/edit_x"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="e.g. 960"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:background="@drawable/edit_text_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="number"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 For a 1920×1080 TV: center = X:960, Y:540"
+            android:textColor="#555555"
+            android:textSize="11sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Target Y (pixels from top)"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/edit_y"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="e.g. 540"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:background="@drawable/edit_text_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="number"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button Color"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Color preview -->
+        <View
+            android:id="@+id/color_preview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Color swatches -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <ImageView android:id="@+id/color_1" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="3dp" android:clickable="true" android:focusable="true" android:contentDescription="Red"/>
+            <ImageView android:id="@+id/color_2" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="3dp" android:clickable="true" android:focusable="true" android:contentDescription="Blue"/>
+            <ImageView android:id="@+id/color_3" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="3dp" android:clickable="true" android:focusable="true" android:contentDescription="Green"/>
+            <ImageView android:id="@+id/color_4" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="3dp" android:clickable="true" android:focusable="true" android:contentDescription="Orange"/>
+            <ImageView android:id="@+id/color_5" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="3dp" android:clickable="true" android:focusable="true" android:contentDescription="Purple"/>
+            <ImageView android:id="@+id/color_6" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="3dp" android:clickable="true" android:focusable="true" android:contentDescription="Cyan"/>
+            <ImageView android:id="@+id/color_7" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="3dp" android:clickable="true" android:focusable="true" android:contentDescription="Deep Orange"/>
+            <ImageView android:id="@+id/color_8" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="3dp" android:clickable="true" android:focusable="true" android:contentDescription="Amber"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Save Button"
+            android:backgroundTint="#1E88E5"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Cancel"
+            android:backgroundTint="#333333"/>
+
+    </LinearLayout>
+</ScrollView>
